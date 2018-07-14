@@ -2,47 +2,143 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
-        <title>About | Donnie Heard</title>
+        <title>Portfolio | Donnie Heard</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
 
-    <body style="background-image: url('assets/imgs/wallpaper.jpg'); background-position: top; background-size: 1200px;"> 
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand " href="index.html">Donnie Heard</a>
-            <div class="navbar-nav" id="navbarNavAltMarkup">
-                <div class="d-flex justify-content-end">
-                    <a class="nav-item nav-link active p-2" href="index.html">About</a>
-                    <a class="nav-item nav-link p-2" href="portfolio.html">Portfolio</a>
-                    <a class="nav-item nav-link p-2" href="contact.html">Contact</a>
-                </div>
-            </div>  
+    <body>
+        <nav id='navheader' class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class='container'>
+                <a class='navbar-brand' href="#">Portfolio</a>
+            </div>
         </nav>
-
-        <div class='container mt-5'>
+        <section id='profileSection' class='jumbotron text-center'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-sm'>
+                        <img id='profile_pic' class='img-fluid ' src='assets/imgs/portfolio_pic.jpg' width='400px' height='250px'><img>
+                        <h1 class='jumbotron-heading'>Donnie Heard Jr</h1>
+                        <p class="lead">I'm an SDET (Software Development Engineer in Test) that has spent the past 3 months learning Full-Stack Web Development. Below are a number of WebPages that I have successfully built. If you would like to know more about me please check out the <a href='#aboutme'>About Me</a> section below</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class='container' id='projectSection'>
             <div class='row'>
-                <div class='col-md-12'>
-                    <div class="card">
-                        <h5 class="card-header">About Me</h5>
-                        <div class="card-body">
-                            <div class='row'>
-                                <div class='col-sm-6'>
-                                    <img src="assets/imgs/portfolio_pic.jpg" class='img-fluid'>
-                                </div>
-                                <div class='col-sm-4'>
-                                    <p>Nulla interdum velit sed nunc lobortis lacinia. Integer vitae vehicula tellus. Vivamus ut cursus nulla. Nulla tempor sed turpis non maximus. Maecenas pellentesque eros vel felis volutpat congue. Maecenas metus enim, porta vitae aliquet non, faucibus in elit. Ut porta eleifend molestie. Nullam aliquet tincidunt convallis. Praesent et rhoncus eros.</p>
-                                </div>
-                            </div>
+                <!-- Project 1 -->
+                <div class='col-lg-6 portfolio-item'>
+                    <div class='card h-100'>
+                        <a href="#">
+                            <img class='card-img-top' data-src="" src='assets/imgs/project_1.PNG' width='740px' height='400px' alt>
+                        </a>
+                        <div class='card-body'>
+                            <h4 class='card-title'>
+                                <a target="_blank" href="https://mekken.github.io/Project-1/">MusiQuery</a>
+                            </h4>
+                            <p class='card-text'>
+                                "This was a group Project where we developed a Music WebSite that would find the user's search query and provide them with a top ten or a list of revelant tracks. We used the Spotify API, Fetch, AJAX, Firebase and Heroku. "
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->                
+                <div class='col-lg-6 portfolio-item'>
+                    <div class='card h-100'>
+                        <a href="#">
+                            <img class='card-img-top' data-src="" src='assets/imgs/giftastic.PNG' width='740px' height='400px' alt>
+                        </a>
+                        <div class='card-body'>
+                            <h4 class='card-title'>
+                                <a target="_blank" href="https://mekken.github.io/GIFTastic/">GIFTastic</a>
+                            </h4>
+                            <p class='card-text'>
+                                "Simple WebPage that creates new buttons and searches Giphy for gifs based on the buttons clcked. Also allows user to click on GIF to see the gif in action (click again to stop)"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->                
+                <div class='col-lg-6 portfolio-item'>
+                    <div class='card h-100'>
+                        <a href="#">
+                            <img class='card-img-top' data-src="" src='assets/imgs/word_guess.PNG' width='740px' height='400px' alt>
+                        </a>
+                        <div class='card-body'>
+                            <h4 class='card-title'>
+                                <a target="_blank" href="https://mekken.github.io/Word_Guess_Game/">Word Guess Game</a>
+                            </h4>
+                            <p class='card-text'>
+                                "A word guess game that displays youtube videos when the user guesses the word right. Hint: All related to memes"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->                
+                <div class='col-lg-6 portfolio-item'>
+                    <div class='card h-100'>
+                        <a href="#">
+                            <img class='card-img-top' data-src="" src='assets/imgs/train_schedule.PNG' width='740px' height='400px' alt>
+                        </a>
+                        <div class='card-body'>
+                            <h4 class='card-title'>
+                                <a target="_blank" href="https://mekken.github.io/train-schedule/">Train Schedule</a>
+                            </h4>
+                            <p class='card-text'>
+                                "Basic Train Schedule, which allows users to enter in a new scheduled transport. All time is relative to the current user's timezone."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->                
+                <div class='col-lg-6 portfolio-item'>
+                    <div class='card h-100'>
+                        <a href="#">
+                            <img class='card-img-top' data-src="" src='assets/imgs/trivia_game.PNG' width='740px' height='400px' alt>
+                        </a>
+                        <div class='card-body'>
+                            <h4 class='card-title'>
+                                <a target="_blank" href="https://mekken.github.io/TriviaGame/">Marvel Trivia</a>
+                            </h4>
+                            <p class='card-text'>
+                                "Basic Multiple Choice Trivia Game based around the Marvel Universe."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6 -->                
+                <div class='col-lg-6 portfolio-item'>
+                    <div class='card h-100'>
+                        <a href="#">
+                            <img class='card-img-top' data-src="" src='assets/imgs/bloodborne_rpg.PNG' width='740px' height='400px' alt>
+                        </a>
+                        <div class='card-body'>
+                            <h4 class='card-title'>
+                                <a target="_blank" href="https://mekken.github.io/unit-4-game/">Bloodborne RPG</a>
+                            </h4>
+                            <p class='card-text'>
+                                "Simple RPG that pits you against 4 different enemies with different classes to choose from. Hint: Dagger Class is hardest class in game."
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <footer class='py-2 bg-dark'>
+            <div class='container text-light'>
+                <p class='text-left'>
+                    <a target='_blank' href='https://www.linkedin.com/in/donnie-heard-ab7a251a/'><i class='fa fa-linkedin-square' style='font-size:34px;'></i></a>
+                    <a target='_blank' href='https://www.facebook.com/M4K3N'><i class='fa fa-git-square' style='font-size:34px;'></i></a>
+                    <a target='_blank' href='https://www.twitch.tv/makenx'><i class='fa fa-twitch' style='font-size:34px;'></i></a>
+                </p>
+                <p class='text-right'>
+                    <a href='#profileSection'>Back To Top</a>
+                </p>
+                <p class='text-center'>@ Copyright 2018</p>
+            </div>
+        </footer>
     </body>
 
-    <hr>
-    <footer><p class='pt-5 text-light font-weight-bold font-italic text-center'>@ Copyright 2018</p></footer>
 </html>
